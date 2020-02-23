@@ -35,16 +35,20 @@ exports[`Exchange component should render proper markup 1`] = `
           type="tel"
         />
       </section>
-      <a
-        class="button"
-        href="#"
-      >
-        Swap
-      </a>
       <section
-        class="container"
+        class="exchangeRateContainer"
       >
-        €1 = CHF 1.2039
+        <a
+          class="button"
+          href="#"
+        >
+          Swap
+        </a>
+        <section
+          class="container"
+        >
+          €1 = CHF 1.2039
+        </section>
       </section>
       <section
         class="container to"

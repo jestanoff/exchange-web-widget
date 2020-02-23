@@ -1,0 +1,9 @@
+.container {
+  padding: 0;
+}
+
+.exchangeRateContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -18px;
+}
