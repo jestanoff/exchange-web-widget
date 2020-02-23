@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../Header';
-import Exchange from '../Exchange'
+import Exchange from '../Exchange';
 
 const App = () => (
   <>

@@ -1,10 +1,10 @@
 import React from 'react';
+import { oneOf } from 'prop-types';
 import { CHF, EUR, GBP, USD } from '../../constants/currencies';
-import { oneOf, string } from 'prop-types';
 import Input from '../Forms/Input';
 
 const FromPocket = ({ currency, type }) => (
-  <section className='pocket'>
+  <section className="pocket">
     <span>{currency}</span>
     <Input name={type} />
   </section>
@@ -16,5 +16,3 @@ FromPocket.propTypes = {
 };
 
 export default FromPocket;
-
-
