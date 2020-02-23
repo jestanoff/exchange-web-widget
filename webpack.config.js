@@ -1,25 +1,24 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: './src/index.js',
   output: {
-    filename: 'main.js',
+    chunkFilename: '[id].js',
+    filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
+    publicPath: ''
+  },
+  resolve: {
+    extensions: ['.js', '.jsx']
   },
   module: {
     rules: [
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        use: [
-          {
-            loader: 'babel-loader',
-            options: {
-              cacheDirectory: true,
-            },
-          },
-        ],
+        loader: 'babel-loader',
       },
       {
         test: /\.scss$/,
@@ -41,4 +40,11 @@ module.exports = {
       },
     ],
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: __dirname + '/index.html',
+      filename: 'index.html',
+      inject: 'body'
+    })
+  ],
 };
