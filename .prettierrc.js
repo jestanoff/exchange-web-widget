@@ -1,14 +1,6 @@
 module.exports = {
+  printWidth: 100,
+  semi: true,
   singleQuote: true,
   trailingComma: 'all',
-  semi: true,
-  overrides: [
-    {
-      files: '*.js',
-      options: {
-        parser: 'flow',
-      },
-    },
-  ],
-  printWidth: 100,
 };
