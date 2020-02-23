@@ -1,8 +1,20 @@
 .container {
-  padding: 6px 12px;
+  align-items: start;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding: 24px 16px;
+}
+
+.to {
+  background: #F0F0F0;
+}
+
+.from {
+  background: #FFFFFF;
 }
 
 .currency {
-  font-weight: bold;
-  margin-right: 6px;
+  font-size: 36px;
+  margin-bottom: 6px;
 }

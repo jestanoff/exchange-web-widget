@@ -4,8 +4,12 @@ exports[`Input component should render proper markup 1`] = `
 <div>
   <input
     class="input"
-    name="field"
-    type="text"
+    data-test="input-to"
+    maxlength="17"
+    name="to"
+    placeholder="0"
+    required=""
+    type="tel"
   />
 </div>
 `;

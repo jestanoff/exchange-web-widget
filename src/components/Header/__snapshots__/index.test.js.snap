@@ -2,8 +2,12 @@
 
 exports[`Header component should render proper markup 1`] = `
 <div>
-  <header>
-    <h1>
+  <header
+    class="header"
+  >
+    <h1
+      class="heading1"
+    >
       Exchange
     </h1>
   </header>

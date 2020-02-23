@@ -3,17 +3,29 @@
 exports[`Pocket component should render proper markup 1`] = `
 <div>
   <section
-    class="container"
+    class="container to"
   >
-    <span
-      class="currency"
-    >
-      EUR
-    </span>
+    <div>
+      <h2
+        class="currency"
+      >
+        EUR
+      </h2>
+      <span
+        class="balance"
+      >
+        Balance: 
+        €0
+      </span>
+    </div>
     <input
       class="input"
+      data-test="input-to"
+      maxlength="17"
       name="to"
-      type="text"
+      placeholder="0"
+      required=""
+      type="tel"
     />
   </section>
 </div>

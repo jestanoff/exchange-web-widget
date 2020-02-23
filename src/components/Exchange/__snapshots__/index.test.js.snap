@@ -10,17 +10,29 @@ exports[`Exchange component should render proper markup 1`] = `
       name="exchange"
     >
       <section
-        class="container"
+        class="container from"
       >
-        <span
-          class="currency"
-        >
-          EUR
-        </span>
+        <div>
+          <h2
+            class="currency"
+          >
+            EUR
+          </h2>
+          <span
+            class="balance"
+          >
+            Balance: 
+            €0
+          </span>
+        </div>
         <input
-          class="input"
+          class="input from"
+          data-test="input-from"
+          maxlength="17"
           name="from"
-          type="text"
+          placeholder="0"
+          required=""
+          type="tel"
         />
       </section>
       <a
@@ -32,24 +44,32 @@ exports[`Exchange component should render proper markup 1`] = `
       <section
         class="container"
       >
-        €
-         1 = 
-        fr
-         
-        1.2039
+        €1 = CHF 1.2039
       </section>
       <section
-        class="container"
+        class="container to"
       >
-        <span
-          class="currency"
-        >
-          CHF
-        </span>
+        <div>
+          <h2
+            class="currency"
+          >
+            CHF
+          </h2>
+          <span
+            class="balance"
+          >
+            Balance: 
+            CHF 0
+          </span>
+        </div>
         <input
           class="input"
+          data-test="input-to"
+          maxlength="17"
           name="to"
-          type="text"
+          placeholder="0"
+          required=""
+          type="tel"
         />
       </section>
       <button

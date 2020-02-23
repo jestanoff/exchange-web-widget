@@ -1,3 +1,15 @@
 .input {
-  background: white;
+  background: transparent;
+  border: none;
+  color: #000000;
+  font-size: 36px;
+  text-align: right;
+}
+
+.input::placeholder {
+  color: #BBBBBB;
+}
+
+.from {
+  color: #7A838D;
 }

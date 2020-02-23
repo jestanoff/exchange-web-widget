@@ -5,7 +5,7 @@ import styles from './exchangeRate.css';
 
 const ExchangeRate = ({ from, rate, to }) => (
   <section className={styles.container}>
-    {currencies[from].symbol} 1 = {currencies[to].symbol} {rate}
+    {`${currencies[from].symbol}1 = ${currencies[to].symbol}${rate}`}
   </section>
 );
 

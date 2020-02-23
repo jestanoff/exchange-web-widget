@@ -1,6 +1,6 @@
 export const CHF = {
   code: 'CHF',
-  symbol: 'fr',
+  symbol: 'CHF ',
 };
 export const EUR = {
   code: 'EUR',

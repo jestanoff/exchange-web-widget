@@ -1,18 +1,24 @@
 import React from 'react';
 import { oneOf } from 'prop-types';
-import { CHF, EUR, GBP, USD } from '../../constants/currencies';
+import classNames from 'classnames';
 import Input from '../Forms/Input';
+import Balance from '../Balance';
+import getCurrencyCodes from '../../utils/getCurrencyCodes';
+import * as currencies from '../../constants/currencies';
 import styles from './pocket.css';
 
 const FromPocket = ({ currency, type }) => (
-  <section className={styles.container}>
-    <span className={styles.currency}>{currency}</span>
+  <section className={classNames(styles.container, styles[type])}>
+    <div>
+      <h2 className={styles.currency}>{currency}</h2>
+      <Balance currency={currency} />
+    </div>
     <Input name={type} />
   </section>
 );
 
 FromPocket.propTypes = {
-  currency: oneOf([CHF.code, EUR.code, GBP.code, USD.code]).isRequired,
+  currency: oneOf(getCurrencyCodes(currencies)).isRequired,
   type: oneOf(['from', 'to']).isRequired,
 };
 

@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Balance component should render proper markup 1`] = `
+<div>
+  <span
+    class="balance"
+  >
+    Balance: 
+    €99.10
+  </span>
+</div>
+`;

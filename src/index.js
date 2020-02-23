@@ -7,6 +7,9 @@ import root from 'window-or-global';
 import App from './components/App/index.js';
 import rootReducer from './reducers';
 
+import './styles/reset.css';
+import './styles/global.css';
+
 const getReduxDevTools = () =>
   root.devToolsExtension ? root.__REDUX_DEVTOOLS_EXTENSION__({ maxAge: 150 }) : ff => ff;
 

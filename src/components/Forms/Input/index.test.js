@@ -5,7 +5,7 @@ import Input from './';
 
 describe('Input component', () => {
   test('should render proper markup', () => {
-    const { container } = render(<Input name="field" />);
+    const { container } = render(<Input name="to" />);
 
     expect(container).toMatchSnapshot();
   });
