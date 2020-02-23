@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header component should render proper markup 1`] = `
+<div>
+  <header>
+    <h1>
+      Exchange
+    </h1>
+  </header>
+</div>
+`;

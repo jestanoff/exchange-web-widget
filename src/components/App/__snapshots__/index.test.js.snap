@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App component should render proper markup 1`] = `
+<div>
+  <header>
+    <h1>
+      Exchange
+    </h1>
+  </header>
+  <main
+    class="app-container"
+  >
+    <form
+      action="/"
+      name="exchange"
+    >
+      <section
+        class="pocket"
+      >
+        <span>
+          EUR
+        </span>
+        <input
+          name="from"
+          type="text"
+        />
+      </section>
+      <span>
+        Swap
+      </span>
+      <section
+        class="exchange-rate"
+      >
+        €
+         1 = 
+        fr
+         
+        1.2039
+      </section>
+      <section
+        class="pocket"
+      >
+        <span>
+          CHF
+        </span>
+        <input
+          name="to"
+          type="text"
+        />
+      </section>
+      <button
+        type="submit"
+      >
+        Exchange
+      </button>
+    </form>
+  </main>
+</div>
+`;
