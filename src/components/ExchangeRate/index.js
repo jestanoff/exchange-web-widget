@@ -1,9 +1,10 @@
 import React from 'react';
 import { string } from 'prop-types';
 import * as currencies from '../../constants/currencies';
+import styles from './exchangeRate.css';
 
 const ExchangeRate = ({ from, rate, to }) => (
-  <section className="exchange-rate">
+  <section className={styles.container}>
     {currencies[from].symbol} 1 = {currencies[to].symbol} {rate}
   </section>
 );

@@ -4,6 +4,7 @@ import ExchangeRate from '../ExchangeRate';
 import Pocket from '../Pocket';
 import SwapPocketsButton from '../SwapPocketsButton';
 import * as currencies from '../../constants/currencies';
+import styles from './app.css';
 
 const Exchange = () => {
   const fromPocket = {
@@ -15,7 +16,7 @@ const Exchange = () => {
   const rate = '1.2039';
 
   return (
-    <main className="app-container">
+    <main className={styles.container}>
       <form name="exchange" action="/">
         <Pocket currency={fromPocket.currency} type="from" />
         <SwapPocketsButton />

@@ -3,7 +3,7 @@
 exports[`ExchangeRate component should render proper markup 1`] = `
 <div>
   <section
-    class="exchange-rate"
+    class="container"
   >
     $
      1 = 

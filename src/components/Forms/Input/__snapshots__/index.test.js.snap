@@ -3,6 +3,7 @@
 exports[`Input component should render proper markup 1`] = `
 <div>
   <input
+    class="input"
     name="field"
     type="text"
   />

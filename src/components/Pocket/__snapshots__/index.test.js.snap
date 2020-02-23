@@ -3,12 +3,15 @@
 exports[`Pocket component should render proper markup 1`] = `
 <div>
   <section
-    class="pocket"
+    class="container"
   >
-    <span>
+    <span
+      class="currency"
+    >
       EUR
     </span>
     <input
+      class="input"
       name="to"
       type="text"
     />

@@ -2,10 +2,11 @@ import React from 'react';
 import { oneOf } from 'prop-types';
 import { CHF, EUR, GBP, USD } from '../../constants/currencies';
 import Input from '../Forms/Input';
+import styles from './pocket.css';
 
 const FromPocket = ({ currency, type }) => (
-  <section className="pocket">
-    <span>{currency}</span>
+  <section className={styles.container}>
+    <span className={styles.currency}>{currency}</span>
     <Input name={type} />
   </section>
 );

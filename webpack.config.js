@@ -8,34 +8,36 @@ module.exports = {
     chunkFilename: '[id].js',
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
-    publicPath: ''
+    publicPath: '',
   },
   resolve: {
-    extensions: ['.js', '.jsx']
+    extensions: ['.js', '.jsx'],
   },
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.js$/i,
         exclude: /node_modules/,
         loader: 'babel-loader',
       },
       {
-        test: /\.scss$/,
+        test: /\.css$/i,
         use: [
           { loader: 'css-hot-loader' },
           { loader: MiniCssExtractPlugin.loader },
           {
             loader: 'css-loader',
             options: {
+              localsConvention: 'camelCase',
+              modules: {
+                context: path.resolve(__dirname, 'src'),
+                hashPrefix: 'my-custom-hash',
+                localIdentName: '[name]__[local]--[hash:base64:5]',
+                mode: 'local',
+              },
               sourceMap: true,
-              modules: true,
-              importLoaders: 1,
-              localIdentName: '[local]___[hash:base64:5]',
             },
           },
-          { loader: 'postcss-loader', options: { sourceMap: true } },
-          { loader: 'sass-loader', options: { outputStyle: 'compressed', sourceMap: true } },
         ],
       },
     ],
@@ -44,7 +46,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: __dirname + '/index.html',
       filename: 'index.html',
-      inject: 'body'
-    })
+      inject: 'body',
+    }),
+    new MiniCssExtractPlugin({
+      filename: '[name].css',
+    }),
   ],
 };

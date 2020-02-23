@@ -3,28 +3,34 @@
 exports[`Exchange component should render proper markup 1`] = `
 <div>
   <main
-    class="app-container"
+    class="container"
   >
     <form
       action="/"
       name="exchange"
     >
       <section
-        class="pocket"
+        class="container"
       >
-        <span>
+        <span
+          class="currency"
+        >
           EUR
         </span>
         <input
+          class="input"
           name="from"
           type="text"
         />
       </section>
-      <span>
+      <a
+        class="button"
+        href="#"
+      >
         Swap
-      </span>
+      </a>
       <section
-        class="exchange-rate"
+        class="container"
       >
         €
          1 = 
@@ -33,17 +39,21 @@ exports[`Exchange component should render proper markup 1`] = `
         1.2039
       </section>
       <section
-        class="pocket"
+        class="container"
       >
-        <span>
+        <span
+          class="currency"
+        >
           CHF
         </span>
         <input
+          class="input"
           name="to"
           type="text"
         />
       </section>
       <button
+        class="button"
         type="submit"
       >
         Exchange

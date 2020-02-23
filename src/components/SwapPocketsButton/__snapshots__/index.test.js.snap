@@ -2,8 +2,11 @@
 
 exports[`SwapPocketsButton component should render proper markup 1`] = `
 <div>
-  <span>
+  <a
+    class="button"
+    href="#"
+  >
     Swap
-  </span>
+  </a>
 </div>
 `;
