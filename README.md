@@ -1,4 +1,4 @@
-# exchange-web-widget
+# Exchange Web Widget
 
 To start webpack dev server
 ```
@@ -13,4 +13,9 @@ To build for production
 To run unit tests
 ```
   yarn test
+```
+
+To lint source files with eslint and prettier
+```
+  yarn lint
 ```
