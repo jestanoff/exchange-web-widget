@@ -3,6 +3,14 @@
   border-radius: 18px;
   border: 1px solid  #F0F0F0;
   color: #0b5ce4;
-  margin-right: 40%;
+  margin-right: calc(50% - 100px);
   padding: 8px 16px;
+}
+
+.icon {
+  fill: #0b5ce4;
+  height: 16px;
+  margin-right: 12px;
+  vertical-align: bottom;
+  width: 16px;
 }

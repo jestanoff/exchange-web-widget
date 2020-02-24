@@ -3,7 +3,7 @@
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  padding: 48px 24px;
+  padding: 72px 48px;
 }
 
 .to {

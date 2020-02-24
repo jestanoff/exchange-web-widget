@@ -1,3 +1,16 @@
 .button {
-  margin: 0 6px;
+  background: #ffffff;
+  border-radius: 50%;
+  border: 1px solid  #f0f0f0;
+  height: 16px;
+  margin-left: 36px;
+  padding: 10px;
+  text-align: center;
+  width: 16px;
+}
+
+.icon {
+  fill: #0b5ce4;
+  height: 16px;
+  width: 16px;
 }

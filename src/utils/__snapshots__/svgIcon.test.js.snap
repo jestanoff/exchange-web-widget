@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`svgIcon should return Icon react component 1`] = `
+<div>
+  <svg
+    foo="bar"
+  >
+    <patch
+      d="M1"
+    />
+  </svg>
+</div>
+`;
