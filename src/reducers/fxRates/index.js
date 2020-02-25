@@ -1,12 +1,14 @@
+import * as types from '../../actions/types';
+
 const initialState = {
   rates: undefined,
 };
 
-export default (state = initialState, action = {}) => {
-  switch (action.type) {
-    case 'ANY':
+export default (state = initialState, { data, type } = {}) => {
+  switch (type) {
+    case types.GET_RATES_SUCCESS:
       return {
-        rates: 'any',
+        rates: data && data.rates,
       };
 
     default:

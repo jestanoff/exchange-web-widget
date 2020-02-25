@@ -11,8 +11,11 @@ module.exports = {
     publicPath: '',
   },
   resolve: {
+    modules: ['src', 'node_modules'],
     extensions: ['.js', '.jsx'],
   },
+  context: path.resolve(__dirname, './'),
+  devtool: 'eval-source-map',
   module: {
     rules: [
       {

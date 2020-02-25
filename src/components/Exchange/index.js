@@ -1,33 +1,13 @@
-import React from 'react';
-import Button from '../Forms/Button';
-import ExchangeRate from '../ExchangeRate';
-import Pocket from '../Pocket';
-import SwapPocketsButton from '../SwapPocketsButton';
-import * as currencies from '../../constants/currencies';
-import styles from './exchange.css';
+import { connect } from 'react-redux';
+import getCurrencyExchangeRates from 'actions/getCurrencyExchangeRates';
+import Exchange from './Exchange';
 
-const Exchange = () => {
-  const fromPocket = {
-    currency: currencies.EUR.code,
-  };
-  const toPocket = {
-    currency: currencies.CHF.code,
-  };
-  const rate = '1.2039';
+const mapPropsToState = state => ({
+  rates: state && state.fxRates && state.fxRates.rates,
+});
 
-  return (
-    <main className={styles.container}>
-      <form name="exchange" action="/">
-        <Pocket currency={fromPocket.currency} type="from" />
-        <section className={styles.exchangeRateContainer}>
-          <SwapPocketsButton />
-          <ExchangeRate from={fromPocket.currency} rate={rate} to={toPocket.currency} />
-        </section>
-        <Pocket currency={toPocket.currency} type="to" />
-        <Button />
-      </form>
-    </main>
-  );
+const mapDispatchToState = {
+  getCurrencyExchangeRates,
 };
 
-export default Exchange;
+export default connect(mapPropsToState, mapDispatchToState)(Exchange);
