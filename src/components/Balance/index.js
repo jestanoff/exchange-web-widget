@@ -1,7 +1,7 @@
 import React from 'react';
 import { oneOf, string } from 'prop-types';
-import getCurrencyCodes from '../../utils/getCurrencyCodes';
-import * as currencies from '../../constants/currencies';
+import getCurrencyCodes from 'utils/getCurrencyCodes';
+import * as currencies from 'constants/currencies';
 import styles from './balance.css';
 
 const Balance = ({ amount, currency }) => (

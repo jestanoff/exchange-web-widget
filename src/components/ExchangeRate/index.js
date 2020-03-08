@@ -1,7 +1,7 @@
 import React from 'react';
 import { string } from 'prop-types';
-import Icon from '../Icon';
-import * as currencies from '../../constants/currencies';
+import Icon from 'components/Icon';
+import * as currencies from 'constants/currencies';
 import styles from './exchangeRate.css';
 
 const ExchangeRate = ({ from, rate, to }) => (
@@ -13,8 +13,12 @@ const ExchangeRate = ({ from, rate, to }) => (
 
 ExchangeRate.propTypes = {
   from: string.isRequired,
-  rate: string.isRequired,
+  rate: string,
   to: string.isRequired,
+};
+
+ExchangeRate.defaultProps = {
+  rate: '',
 };
 
 export default ExchangeRate;

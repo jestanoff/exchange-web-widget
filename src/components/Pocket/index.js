@@ -1,10 +1,10 @@
 import React from 'react';
 import { oneOf, string } from 'prop-types';
 import classNames from 'classnames';
-import Input from '../Forms/Input';
-import Balance from '../Balance';
-import getCurrencyCodes from '../../utils/getCurrencyCodes';
-import * as currencies from '../../constants/currencies';
+import Input from 'components/Forms/Input';
+import Balance from 'components/Balance';
+import getCurrencyCodes from 'utils/getCurrencyCodes';
+import * as currencies from 'constants/currencies';
 import styles from './pocket.css';
 
 const Pocket = ({ amount, currency, type }) => (

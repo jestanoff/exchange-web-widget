@@ -1,4 +1,4 @@
 import { combineReducers } from 'redux';
-import fxRates from './fxRates';
+import fxRates from 'reducers/fxRates';
 
 export default combineReducers({ fxRates });

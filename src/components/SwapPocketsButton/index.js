@@ -1,5 +1,5 @@
 import React from 'react';
-import Icon from '../Icon';
+import Icon from 'components/Icon';
 import styles from './swapPocketsButton.css';
 
 const SwapPocketsButton = () => (
