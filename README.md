@@ -15,7 +15,7 @@ To run unit tests
   yarn test
 ```
 
-To lint source files with eslint and prettier
+To lint source files with ESLint and Prettier
 ```
   yarn lint
 ```
